@@ -1,6 +1,4 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    new_matrix = []
-    for row in matrix:
-        new_matrix.append([number ** 2 for number in row])
-    return 
+    return [[matrix[i][j]**2 for j in range(len(matrix[0]))]
+            for i in range(len(matrix))] 
